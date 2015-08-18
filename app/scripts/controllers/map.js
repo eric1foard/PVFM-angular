@@ -32,4 +32,16 @@
                 }
             }};
 
+    $scope.tiles = {
+        name: 'watercolor',
+        url: 'http://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png',
+        type: 'xyz'
+    };
+
+
+    $scope.$watch("center.zoom", function(zoom) {
+        $scope.tiles.url = (zoom > 12)? "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        : "http://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png";
+    });
+
         });
