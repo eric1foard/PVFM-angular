@@ -1,6 +1,11 @@
-<h1>Portola Valley Farmers' Market</h1>
-
-<section id="photos">
+<section class="photo-section" id="photos" ng-controller="PhotoCtrl" >
+  <div>
+    <carousel interval="myInterval" no-wrap="noWrapSlides">
+      <slide ng-repeat="slide in slides" active="slide.active">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+      </slide>
+    </carousel>
+  </div>
 </section>
 
 <section id="description">
@@ -25,8 +30,12 @@
   </div>
 </section>
 
-<section id="map" ng-controller="MapCtrl">
-  <leaflet height="300px" width="100%" defaults="defaults" center="center" markers="markers"></leaflet>
+<section class="leaflet-section" id="map" ng-controller="MapCtrl">
+  <div class="row">
+    <div class="col-lg-12">
+      <leaflet height="300px" width="100%" defaults="defaults" center="center" markers="markers"></leaflet>
+    </div>
+  </div>
 </section>
 
 <section id ="contact">
