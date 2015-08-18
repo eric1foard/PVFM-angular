@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name pvfmApp.controller:MainCtrl
+ * @name pvfmApp.controller:AboutCtrl
  * @description
- * # MainCtrl
+ * # AboutCtrl
  * Controller of the pvfmApp
  */
 angular.module('pvfmApp')
-  .controller('MainCtrl', function () {
+  .controller('AboutCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

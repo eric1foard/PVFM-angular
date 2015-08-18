@@ -17,12 +17,13 @@ angular
     'ngSanitize',
     'ngTouch',
     'ui.bootstrap',
+    'leaflet-directive'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
+        controller: 'VendorCtrl',
         controllerAs: 'main'
       })
       .when('/about', {
