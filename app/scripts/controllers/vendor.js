@@ -41,16 +41,20 @@
 
     $scope.showGroup = function(group) {
 
-     if ($scope.isCollapsed) {
-        $scope.targetGroup = group.vendors;
-        $scope.isCollapsed = false;
-    }
+        if (!$scope.isCollapsed && $scope.targetGroup === group.vendors) {
+            $scope.isCollapsed = true;
+            $scope.targetGroup = {};
+        }
 
-    else {
-        $scope.isCollapsed = true;
-        $scope.targetGroup = {};
-    }
-};
+        else if (!$scope.isCollapsed && $scope.targetGroup !== group.vendors) {
+            $scope.targetGroup = group.vendors;
+        }
+
+        else {
+            $scope.isCollapsed = false;
+            $scope.targetGroup = group.vendors;
+        }
+    };
 
 
 });

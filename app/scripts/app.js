@@ -18,7 +18,7 @@ angular
     'ngTouch',
     'ui.bootstrap',
     'leaflet-directive'
-  ])
+    ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
