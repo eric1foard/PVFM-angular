@@ -14,12 +14,16 @@ body {
   padding: 0;
   background: #8e44ad;
   color: white;
-  font-weight: 100;
+  font-weight: 200;
 
 }
 
+h1 {
+  font-weight: 200;
+}
+
 h2 {
-  font-weight: 100;
+  font-weight: 200;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -138,7 +142,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-.group-img {
+.groupimg {
   width:130px;
   height:130px;        
   border:3px solid black;
@@ -153,8 +157,11 @@ h2 {
   background: #2ecc71;
 }
 
-.embellish {
-  font-weight: 200;
+.embellish {  
+  border:5px solid #f1c40f;
 }
 
+.selected {  
+  border:5px solid #2ecc71;
+}
 
