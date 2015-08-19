@@ -19,23 +19,23 @@
     vendors: ['Rio de Parros', 'Webb Ranch']},
 
     {name: 'Meat & Fish',
-    image: 'images/fish.png',
+    image: 'images/Fish.png',
     vendors: ['One Ocean Seafood', 'Markegard Meats']},
 
     {name: 'Specialty Items',
-    image: 'images/beer.png',
+    image: 'images/Beer.png',
     vendors: ["Nut 'n Bean", 'Golden State Brewery']},
 
     {name: 'Bakery & Sweets',
-    image: 'images/bread.png',
+    image: 'images/Bread.png',
     vendors: ["Flower Child", 'Bread Dude']},
 
     {name: 'Food Trucks',
-    image: 'images/food-truck.png',
+    image: 'images/Food-Truck.png',
     vendors: ["Rollie Roadie", 'Big Daddy Taco Truck']},
 
     {name: 'Crafts',
-    image: 'images/sewing-machine.png',
+    image: 'images/Sewing-Machine.png',
     vendors: ['Wild Woman Pottery', "Mike's Bazooka Emporium"]}
     ];
 
