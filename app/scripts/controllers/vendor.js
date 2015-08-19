@@ -10,34 +10,70 @@
  angular.module('pvfmApp')
  .controller('VendorCtrl', function ($scope) {
 
- 	$scope.isCollapsed = true;
-    $scope.targetGroup = [];
-
+ 	$scope.isCollapsed = false;
     $scope.vendorGroups = [
-    {name: 'Fruit & Veggies',
+    {name: 'Farm Produce',
     image: 'images/fruit.png',
-    vendors: ['Rio de Parros', 'Webb Ranch']},
+    selection: true,
+    vendors: ['Old Dog Ranch',
+    'Webb Ranch',
+    'Crescent Farm',
+    'Rio de Parras',
+    'Specialty Produce',
+    'Smit Farm',
+    'Sunrise Farm',
+    'Half Moon Harvest',
+    'Green Eggs-n-Jam',
+    'local honey']},
 
     {name: 'Meat & Fish',
     image: 'images/Fish.png',
-    vendors: ['One Ocean Seafood', 'Markegard Meats']},
+    selection: false,
+    vendors: ["Victorian Farmstead Meats",
+    "One Ocean Seafood",
+    "Haley's Sausage Co."]},
 
     {name: 'Specialty Items',
     image: 'images/Beer.png',
-    vendors: ["Nut 'n Bean", 'Golden State Brewery']},
+    selection: false,
+    vendors: ["Sinbad Catering",
+    "Nut 'n Bean",
+    "High Note Coffee",
+    "Golden State Brewery",
+    "Milliken Creek Vineyards",
+    "Homamaid Ravioli",
+    "Dobson & Clarke",
+    "Joyus Juice"]},
 
     {name: 'Bakery & Sweets',
     image: 'images/Bread.png',
-    vendors: ["Flower Child", 'Bread Dude']},
+    selection: false,
+    vendors: ["Portola Valley Bread",
+    "Flourchylde Bakery",
+    "City Baking",
+    "Tantalizing Toffee",
+    "Spoon & Spatula Bakery",
+    "macaroons",
+    "Kidding Around with Chocolate"]},
 
     {name: 'Food Trucks',
     image: 'images/Food-Truck.png',
-    vendors: ["Rollie Roadie", 'Big Daddy Taco Truck']},
+    selection: false,
+    vendors: ["Roli Roti (hot rotisserie chicken and potatoes)"]},
 
     {name: 'Crafts',
     image: 'images/Sewing-Machine.png',
-    vendors: ['Wild Woman Pottery', "Mike's Bazooka Emporium"]}
+    selection: false,
+    vendors: ["J. Carruthers Floral",
+    "Ecogirl Handbags",
+    "Kathena Avelon Jewelry",
+    "Dream Light Jewelry",
+    "Nancy Wilder Designs",
+    "Zubrub",
+    "Route One Pumpkin Soaps & Lotion"]}
     ];
+
+    $scope.targetGroup = $scope.vendorGroups[0];
 
     $scope.showGroup = function(group) {
 
@@ -54,6 +90,15 @@
             $scope.isCollapsed = false;
             $scope.targetGroup = group;
         }
+    };
+
+    $scope.updateSelect = function(group) {
+
+        $scope.vendorGroups.forEach(function(elt) {
+            elt.selection = false;
+        });
+
+        group.selection = !$scope.isCollapsed;
     };
 
 

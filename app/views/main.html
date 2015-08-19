@@ -10,27 +10,22 @@
 
 <section id="description" class="description-section">
 
-  <h2 ng-class="{embellish: hover0}" 
-  ng-mouseenter="hover0 = true"
-  ng-mouseleave="hover0 = false">Portola Valley Town Center</h2>
+  <h2><strong>Where:</strong> Portola Valley Town Center</h2>
   <br>
-  <h2 ng-class="{embellish: hover1}" 
-  ng-mouseenter="hover1 = true"
-  ng-mouseleave="hover1 = false">Thursdays 3-7PM</h2>
+  <h2><strong>When:</strong> Thursdays 3-7PM</h2>
   <br>
   <br>
-  <p ng-class="{embellish: hover2}" 
-  ng-mouseenter="hover2 = true"
-  ng-mouseleave="hover2 = false"
-  style="font-size: 125%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p style="font-size: 125%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </section>
 
 <section id="vendors" ng-controller="VendorCtrl" class="vendor-section">
-  <h2>Vendors</h2>
+  <h2><strong>Browse Our Vendors</strong></h2>
 
   <div>
-    <img class="group-img" ng-repeat="group in vendorGroups" ng-src="{{group.image}}" 
-    alt="{{group.name}}" ng-click="showGroup(group)">
+    <img class="groupimg" ng-repeat="group in vendorGroups" ng-src="{{group.image}}" 
+    alt="{{group.name}}" ng-click="showGroup(group); updateSelect(group)"  ng-class="{embellish: hover, selected: group.selection}" 
+  ng-mouseenter="hover = true"
+  ng-mouseleave="hover = false">
   </div>
 
   <div collapse="isCollapsed">
@@ -51,11 +46,13 @@
 
 <section id ="contact" class="contact-section">
   <a href="mailto:foard265@gmail.com">
-    <img src="images/mail.png" class="group-img">
+    <img src="images/mail.png" class="groupimg" ng-class="{embellish: hover0}"   ng-mouseenter="hover0 = true"
+  ng-mouseleave="hover0 = false">
   </a>
 
   <a href="https://www.facebook.com/PortolaValleyFarmersMarket?fref=ts" target="_blank">
-    <img src="images/facebook.png" class="group-img">
+    <img src="images/facebook.png" class="groupimg" ng-class="{embellish: hover}"   ng-mouseenter="hover = true"
+  ng-mouseleave="hover = false">
   </a>
 </section>
 
