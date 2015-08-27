@@ -41,7 +41,7 @@
     "High Note Coffee",
     "Golden State Brewery",
     "Milliken Creek Vineyards",
-    "Homamaid Ravioli",
+    "Homemaid Ravioli Co.",
     "Dobson & Clarke",
     "Joyus Juice"]},
 
@@ -53,7 +53,7 @@
     "City Baking",
     "Tantalizing Toffee",
     "Spoon & Spatula Bakery",
-    "macaroons",
+    "Ladera Patisserie",
     "Kidding Around with Chocolate"]},
 
     {name: 'Food Trucks',

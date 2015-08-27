@@ -16,7 +16,6 @@
     {image: 'images/coffee.png'},
     {image: 'images/carrots.png'},
     {image: 'images/glamor-bread.png'},{image: 'images/happy.png'},
-    {image: 'images/peppers.png'},{image: 'images/strawberries.png'},
-    {image: 'images/walnut.png'},{image: 'images/pops.png'}];
+    {image: 'images/peppers.png'},{image: 'images/strawberries.png'}];
 
  });
