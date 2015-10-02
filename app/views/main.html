@@ -20,10 +20,11 @@
 
 <section id="vendors" ng-controller="VendorCtrl" class="vendor-section">
   <h2><strong>Browse Our Vendors</strong></h2>
+  <h3 style="margin-top: -10px; margin-bottom: 20px;"><small>Choose a category to see who joins us!</small></h3>
 
-  <div>
-    <img class="groupimg" ng-repeat="group in vendorGroups" ng-src="{{group.image}}" 
-    alt="{{group.name}}" ng-click="showGroup(group); updateSelect(group)"  ng-class="{embellish: hover, selected: group.selection}" 
+  <div style="width: 75%;">
+    <img class="groupimg" ng-repeat="group in vendorGroups" ng-src="{{group.image}}"
+    alt="{{group.name}}" ng-click="showGroup(group); updateSelect(group)"  ng-class="{embellish: hover, selected: group.selection}"
   ng-mouseenter="hover = true"
   ng-mouseleave="hover = false">
   </div>
@@ -55,4 +56,3 @@
   ng-mouseleave="hover = false">
   </a>
 </section>
-

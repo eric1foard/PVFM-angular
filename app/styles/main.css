@@ -1,6 +1,5 @@
 html {
-  text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .browsehappy {
@@ -144,24 +143,23 @@ h2 {
 
 .groupimg {
   width:130px;
-  height:130px;        
+  height:130px;
   border:3px solid black;
-  border-radius:65px; 
+  border-radius:65px;
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 5px;
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
 }
 
 .well-lg {
   background: #2ecc71;
 }
 
-.embellish {  
+.embellish {
   border:5px solid #f1c40f;
 }
 
-.selected {  
+.selected {
   border:5px solid #2ecc71;
 }
-

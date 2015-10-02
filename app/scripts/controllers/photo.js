@@ -14,8 +14,10 @@
     $scope.noWrapSlides = false;
     $scope.slides = [
     {image: 'images/coffee.png'},
-    {image: 'images/carrots.png'},
-    {image: 'images/glamor-bread.png'},{image: 'images/happy.png'},
-    {image: 'images/peppers.png'},{image: 'images/strawberries.png'}];
-
+    {image: 'images/peppers1.png'},
+    {image: 'images/tomatoes.png'},
+    {image: 'images/peppers.png'},
+    {image: 'images/sky.png'},
+    {image: 'images/squash.png'}
+  ];
  });
