@@ -24,7 +24,8 @@
     'Sunrise Farm',
     'Half Moon Harvest',
     'Green Eggs-n-Jam',
-    'local honey']},
+    'local honey',
+    'Bill the Bulb Baron']},
 
     {name: 'Meat & Fish',
     image: 'images/Fish.png',
@@ -42,8 +43,7 @@
     "Golden State Brewery",
     "Milliken Creek Vineyards",
     "Homemaid Ravioli Co.",
-    "Dobson & Clarke",
-    "Joyus Juice"]},
+    "Dobson&Clarke"]},
 
     {name: 'Bakery & Sweets',
     image: 'images/Bread.png',
@@ -54,7 +54,8 @@
     "Tantalizing Toffee",
     "Spoon & Spatula Bakery",
     "Ladera Patisserie",
-    "Kidding Around with Chocolate"]},
+    "Kidding Around with Chocolate",
+    "Shampa's Pies"]},
 
     {name: 'Food Trucks',
     image: 'images/Food-Truck.png',

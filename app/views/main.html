@@ -1,58 +1,69 @@
 <section class="photo-section" id="photos" ng-controller="PhotoCtrl" >
-  <div>
-    <carousel interval="myInterval" no-wrap="noWrapSlides">
-      <slide ng-repeat="slide in slides" active="slide.active">
-        <img ng-src="{{slide.image}}" style="margin:auto;">
-      </slide>
-    </carousel>
-  </div>
+
+    <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Market Hours Changing!</strong> Winter Hours (2-5pm) begin November 1st
+    </div>
+
+    <div>
+        <carousel interval="myInterval" no-wrap="noWrapSlides">
+            <slide ng-repeat="slide in slides" active="slide.active">
+                <img ng-src="{{slide.image}}" style="margin:auto;">
+            </slide>
+        </carousel>
+    </div>
 </section>
 
 <section id="description" class="description-section">
 
-  <h2><strong>Where:</strong> Portola Valley Town Center</h2>
-  <br>
-  <h2><strong>When:</strong> Every Thursday year-round (3-7pm in summer, 2-5pm in winter)</h2>
-  <br>
-  <br>
-  <p style="font-size: 125%;">Every Thursday afternoon, in the parking lot in front of the Historic Schoolhouse, the farmers arrive one by one. Tents pop up, fruits and vegetables are unloaded and arranged onto tables. The baker arrives with his warm loaves, the coffee roaster lines up his bags of freshly roasted beans. The sausage maker,the fishmonger, the farmstead meat vendor arrive. Eggs and specialties appear on the tables and trickling in, the shoppers arrive and get in line for the warm loaves. The laughter begins…..</p>
+    <h2><strong>Where:</strong> Portola Valley Town Center</h2>
+    <br>
+    <h2><strong>When:</strong> Every Thursday year-round</h2>
+    <i><h3>Winter Hours (2-5pm) begin when the clock falls back in November, right after Halloween 2015!</h3>
+    <h3>Summer Hours (2-6pm) will resume when the clock springs forward in March 2016. </h3></i>
+    <br>
+    <hr>
+
 </section>
 
 <section id="vendors" ng-controller="VendorCtrl" class="vendor-section">
-  <h2><strong>Browse Our Vendors</strong></h2>
-  <h3 style="margin-top: -10px; margin-bottom: 20px;"><small>Choose a category to see who joins us!</small></h3>
+    <h2 style="margin-top: -20px;"><strong>Browse Our Vendors</strong></h2>
+    <h3 style="margin-top: -10px; margin-bottom: 40px;"><small>Choose a category to see who joins us!</small></h3>
 
-  <div style="width: 75%;">
-    <img class="groupimg" ng-repeat="group in vendorGroups" ng-src="{{group.image}}"
-    alt="{{group.name}}" ng-click="showGroup(group); updateSelect(group)"  ng-class="{embellish: hover, selected: group.selection}"
-  ng-mouseenter="hover = true"
-  ng-mouseleave="hover = false">
-  </div>
-
-  <div collapse="isCollapsed">
-    <div class="well well-lg">
-      <h2>{{targetGroup.name}}</h2>
-      <li ng-repeat="vendor in targetGroup.vendors"><h4>{{vendor}}</h4></li>
+    <div style="width: 75%; margin-bottom: 40px;">
+        <img class="groupimg" ng-repeat="group in vendorGroups" ng-src="{{group.image}}"
+        alt="{{group.name}}" ng-click="showGroup(group); updateSelect(group)"  ng-class="{embellish: hover, selected: group.selection}"
+        ng-mouseenter="hover = true"
+        ng-mouseleave="hover = false">
     </div>
-  </div>
+
+    <div collapse="isCollapsed">
+        <div class="well well-lg">
+            <h2>{{targetGroup.name}}</h2>
+            <li ng-repeat="vendor in targetGroup.vendors"><h4>{{vendor}}</h4></li>
+        </div>
+    </div>
 </section>
 
-<section class="leaflet-section" id="map" ng-controller="MapCtrl">
-  <div class="row">
-    <div class="col-lg-12">
-      <leaflet height="450px" width="100%" defaults="defaults" center="center" markers="markers" tiles="tiles"></leaflet>
+<section  style="margin-top: 20px;" class="leaflet-section" id="map" ng-controller="MapCtrl">
+    <div class="row">
+        <div class="col-lg-12">
+            <leaflet height="450px" width="100%" defaults="defaults" center="center" markers="markers" tiles="tiles"></leaflet>
+        </div>
     </div>
-  </div>
+</section>
+<section>
+    <p style="font-size: 125%;">Every Thursday afternoon, in the parking lot in front of the Historic Schoolhouse, the farmers arrive one by one. Tents pop up, fruits and vegetables are unloaded and arranged onto tables. The baker arrives with his warm loaves, the coffee roaster lines up his bags of freshly roasted beans. The sausage maker,the fishmonger, the farmstead meat vendor arrive. Eggs and specialties appear on the tables and trickling in, the shoppers arrive and get in line for the warm loaves. The laughter begins…</p>
 </section>
 
 <section id ="contact" class="contact-section">
-  <a href="mailto:foard265@gmail.com">
-    <img src="images/mail.png" class="groupimg" ng-class="{embellish: hover0}"   ng-mouseenter="hover0 = true"
-  ng-mouseleave="hover0 = false">
-  </a>
+    <a href="mailto:foard265@gmail.com">
+        <img src="images/mail.png" class="groupimg" ng-class="{embellish: hover0}"   ng-mouseenter="hover0 = true"
+        ng-mouseleave="hover0 = false">
+    </a>
 
-  <a href="https://www.facebook.com/PortolaValleyFarmersMarket?fref=ts" target="_blank">
-    <img src="images/facebook.png" class="groupimg" ng-class="{embellish: hover}"   ng-mouseenter="hover = true"
-  ng-mouseleave="hover = false">
-  </a>
+    <a href="https://www.facebook.com/PortolaValleyFarmersMarket?fref=ts" target="_blank">
+        <img src="images/facebook.png" class="groupimg" ng-class="{embellish: hover}"   ng-mouseenter="hover = true"
+        ng-mouseleave="hover = false">
+    </a>
 </section>
