@@ -16,6 +16,7 @@
     image: 'images/fruit.png',
     selection: true,
     vendors: [
+    'Winter’s Fruit Tree (pistachio’s and almonds)',
     'Webb Ranch',
     'Crescent Farm',
     'Rio de Parras',
